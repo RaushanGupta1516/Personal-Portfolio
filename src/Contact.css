@@ -1,0 +1,185 @@
+
+
+.contactbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding: 0 15px;
+}
+
+#touch {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#talk {
+    font-size: 2.2rem;
+    color: rgb(255, 0, 111);
+    text-align: center;
+}
+
+.contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contactinfo .left, 
+.contactinfo .right {
+    width: 100%;
+    max-width: 500px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left p {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.iconbox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.right form input,
+.right textarea {
+    width: 100%;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    outline: none;
+    height: 45px;
+    padding: 0 10px;
+    color: white;
+    caret-color: white;
+}
+
+#namee {
+    color: white;
+    caret-color: white;
+}
+
+.right textarea {
+    height: 150px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.right button {
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: rgba(255, 0, 111, 0.761);
+    border: none;
+    width: 100%;
+    max-width: 150px;
+    outline: none;
+    border-radius: 28px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.right button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.right label {
+    margin-bottom: -5px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .contactinfo {
+        gap: 30px;
+    }
+
+    #talk {
+        font-size: 1.8rem;
+    }
+
+    .right button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, 
+    .right {
+        max-width: 90%;
+    }
+
+    #touch {
+        font-size: 2rem;
+    }
+
+    #talk {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #touch {
+        font-size: 1.8rem;
+    }
+
+    #talk {
+        font-size: 1.4rem;
+    }
+
+    .left p {
+        font-size: 0.9rem;
+    }
+
+    .right form input,
+    .right textarea {
+        font-size: 0.9rem;
+    }
+
+    .right button {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .icon {
+        gap: 10px;
+    }
+
+    .icon p {
+        font-size: 0.9rem;
+    }
+}
